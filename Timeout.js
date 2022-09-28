@@ -12,10 +12,10 @@ let currentTime = 0;
 
 const incrementTime = () => {
   currentTime += waitInterval;
-  const p = Math.floor((currentTime / waitTime) * 100);
+  const completionPercentage = Math.floor((currentTime / waitTime) * 100);
   process.stdout.clearLine();
   process.stdout.cursorTo(0);
-  process.stdout.write(`waiting... ${p}`);
+  process.stdout.write(`waiting... ${completionPercentage}`);
 };
 
 const interval = setInterval(incrementTime, waitInterval);
