@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-// RENAME
+// RENAME FILES / Move directories
 // fs.renameSync(".lib.config.js", "./lib/project-config.js");
 
 // console.log("Config.js file renamed");
@@ -15,7 +15,7 @@ const fs = require("fs");
 // })
 
 // REMOVE
-fs.unlinkSync("./lib/project-config.js");
+// fs.unlinkSync("./lib/project-config.js");
 
 fs.unlink("notes.md", (err) => {
   if (err) {
